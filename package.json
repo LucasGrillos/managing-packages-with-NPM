@@ -4,6 +4,7 @@
 	"keywords": ["Useful Programmer", "freecodecamp", "awesome!", "Learn backend development"],
 	"description": "A web app that teaches people to make meaningful contributions to software projects.",
 	"license": "MIT",
+	"version": "1.0.0",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
