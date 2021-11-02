@@ -1,6 +1,7 @@
 {
 	"author": "Lucas Grillos",
 	"name": "fcc-learn-npm-package-json",
+	"description": "A web app that teaches people to make meaningful contributions to software projects."
 	"dependencies": {
 		"express": "^4.14.0"
 	},
