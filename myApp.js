@@ -26,12 +26,10 @@ app.get("/json", (req, res) => {
 */
 
 app.get("/json", (req, res) => {
-  var jsonResponse = ({"message": "Hello json"});
-  if (process.env.MESSAGE_STYLE==="UPPERCASE") {
-    console.log("HELLO!");
+  var jsonResponse = {"message": "Hello json"};
+  if (process.env.MESSAGE_STYLE==="uppercase") {
     jsonResponse = jsonResponse.message.toUpperCase();
   }
-  console.log("HELLO 2");
   res.json(jsonResponse);
 });
 
