@@ -2,7 +2,12 @@ var express = require('express');
 var app = express();
 require('dotenv').config();
 //bGround.log("Hello World");
-console.log("Hello World");
+
+app.use(function(req, res, next) {
+  console.log(req.method + " " + req.path + " - " + req.ip);
+
+  next();
+});
 
 /*
 app.get("/", (req, res) => {
@@ -10,7 +15,7 @@ app.get("/", (req, res) => {
 })
 */
 
-
+console.log("Hello World");
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html")
